@@ -1,0 +1,20 @@
+{
+  "name": "where-is-my-node",
+  "version": "0.1.0",
+  "main": "index.js",
+  "description": "",
+  "author": "Jakub Biesiada",
+  "license": "MIT",
+  "repository": "https://github.com/JB1905/CLI.git",
+  "preferGlobal": true,
+  "engines": {
+    "node": "8 || 9 || 10 || 11"
+  },
+  "bin": "./bin/index.js",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "commander": "^2.19.0",
+    "node-fetch": "^2.3.0",
+    "npm-path": "^2.0.4"
+  }
+}
