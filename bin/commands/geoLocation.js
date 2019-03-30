@@ -1,6 +1,8 @@
 const fetch = require('node-fetch');
 const chalk = require('chalk');
 
+const url = 'https://api.ipdata.co/?api-key=test';
+
 const getLocationFromIP = async url => {
   const res = await fetch(url);
 
