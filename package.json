@@ -5,7 +5,7 @@
   "author": "Jakub Biesiada",
   "license": "MIT",
   "main": "index.js",
-  "repository": "https://github.com/JB1905/CLI.git",
+  "repository": "https://github.com/JB1905/where-is-my-node.git",
   "preferGlobal": true,
   "engines": {
     "node": "8 || 9 || 10 || 11"
