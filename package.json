@@ -1,10 +1,10 @@
 {
   "name": "where-is-my-node",
   "version": "1.0.0",
-  "main": "index.js",
   "description": "Get Node.js location (geolocation and directory on your disk)",
   "author": "Jakub Biesiada",
   "license": "MIT",
+  "main": "index.js",
   "repository": "https://github.com/JB1905/CLI.git",
   "preferGlobal": true,
   "engines": {
