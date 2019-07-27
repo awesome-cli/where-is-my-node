@@ -6,11 +6,10 @@
   "license": "MIT",
   "main": "index.js",
   "repository": "https://github.com/JB1905/where-is-my-node.git",
-  "preferGlobal": true,
   "engines": {
-    "node": "8 || 9 || 10 || 11"
+    "node": ">=8"
   },
-  "bin": "./bin/index.js",
+  "bin": "bin/index.js",
   "dependencies": {
     "chalk": "^2.4.2",
     "commander": "^2.20.0",
