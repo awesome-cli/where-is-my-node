@@ -14,23 +14,13 @@ const diskLocationCommand = require('./commands/diskLocation');
 program
   .command('location')
   .alias('lc')
-  .description('checks node geolocation and disk location')
-  .action(async () => {
-    await geoLocationCommand();
-    await diskLocationCommand();
+  .option('-g --geo', 'output computer geolocation')
+  .option('-d --disk', 'output directory on disk')
+  .description('checks node location')
+  .action(async cmd => {
+    if (cmd.geo) await geoLocationCommand();
+    if (cmd.disk) await diskLocationCommand();
   });
-
-program
-  .command('geolocation')
-  .alias('glc')
-  .description('checks node geolocation')
-  .action(() => geoLocationCommand());
-
-program
-  .command('disklocation')
-  .alias('dlc')
-  .description('checks node disk location')
-  .action(() => diskLocationCommand());
 
 program.on('command:*', () => {
   console.error(chalk.red('Invalid command'));
