@@ -18,8 +18,21 @@ program
   .option('-d --disk', 'output directory on disk')
   .description('checks node location')
   .action(async cmd => {
-    if (cmd.geo) await geoLocationCommand();
-    if (cmd.disk) await diskLocationCommand();
+    if (cmd.geo || cmd.disk) {
+      console.log(`${chalk.magenta('Your node.js is here:')}`);
+    }
+
+    if (cmd.geo) {
+      await geoLocationCommand();
+    }
+
+    if (cmd.geo && cmd.disk) {
+      console.log(`${chalk.magenta('And here:')}`);
+    }
+
+    if (cmd.disk) {
+      await diskLocationCommand();
+    }
   });
 
 program.on('command:*', () => {
@@ -30,6 +43,12 @@ program.on('command:*', () => {
 
 if (!process.argv.slice(2).length) {
   console.warn('No command specified');
+
+  process.exit(1);
+}
+
+if (!process.argv.slice(3).length) {
+  program.command('location').outputHelp();
 
   process.exit(1);
 }
