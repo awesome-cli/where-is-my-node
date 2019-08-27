@@ -16,12 +16,13 @@ module.exports = async () => {
     const geoLocation = await getLocationFromIP(url);
 
     console.log(
-      'Your node.js is here:\n' +
-        `coordinates: (${geoLocation.latitude}, ${geoLocation.longitude})\n` +
-        `city: ${geoLocation.city}\n` +
-        `region: ${geoLocation.region}\n` +
-        `country: ${geoLocation.country}\n` +
-        `continent: ${geoLocation.continent}\n`
+      `${chalk.cyan('coordinates')}: (${geoLocation.latitude}, ${
+        geoLocation.longitude
+      })\n` +
+        `${chalk.cyan('city')}: ${geoLocation.city}\n` +
+        `${chalk.cyan('region')}: ${geoLocation.region}\n` +
+        `${chalk.cyan('country')}: ${geoLocation.country}\n` +
+        `${chalk.cyan('continent')}: ${geoLocation.continent}\n`
     );
   } catch (err) {
     console.error(chalk.red(`${err}`));
