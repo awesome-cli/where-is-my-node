@@ -1,15 +1,15 @@
 #!/usr/bin/env node
 
-const path = require('path');
-const program = require('commander');
-const chalk = require('chalk');
+import path from 'path';
+import program from 'commander';
+import chalk from 'chalk';
+
+import geoLocationCommand from './commands/geoLocation';
+import diskLocationCommand from './commands/diskLocation';
 
 const pkg = require(path.join(__dirname, '../package.json'));
 
 program.version(pkg.version).description(chalk.blue('where is my node'));
-
-const geoLocationCommand = require('./commands/geoLocation');
-const diskLocationCommand = require('./commands/diskLocation');
 
 program
   .command('location')

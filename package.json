@@ -1,12 +1,13 @@
 {
   "name": "where-is-my-node",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Get Node.js location (geolocation and directory on your disk)",
   "author": "Jakub Biesiada",
   "license": "MIT",
-  "main": "index.js",
+  "main": "bin/index.js",
   "scripts": {
-    "prettier": "prettier --write 'bin/**/*.js'"
+    "build": "tsc -p .",
+    "prettier": "prettier --write 'src/**/*.ts'"
   },
   "repository": "https://github.com/JB1905/where-is-my-node.git",
   "engines": {
@@ -20,9 +21,13 @@
     "npm-path": "^2.0.4"
   },
   "devDependencies": {
+    "@types/chalk": "^2.2.0",
+    "@types/node": "^12.7.10",
+    "@types/node-fetch": "^2.5.2",
     "husky": "^3.0.7",
     "lint-staged": "^9.4.1",
-    "prettier": "^1.18.2"
+    "prettier": "^1.18.2",
+    "typescript": "^3.6.3"
   },
   "husky": {
     "hooks": {
@@ -30,7 +35,7 @@
     }
   },
   "lint-staged": {
-    "bin/**/*.js": [
+    "src/**/*.ts": [
       "npm run prettier",
       "git add"
     ]

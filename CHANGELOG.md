@@ -1,5 +1,9 @@
 # Where is my node Changelog
 
+## 1.2.0 (2019-10-04)
+#### Repository Changes
+- added `TypeScript`
+
 ## 1.1.0 (2019-08-26)
 #### Breaking Changes
 - replaced `geolocation` & `disklocation` with `-g --geo` & `-d --disk` options

@@ -1,9 +1,9 @@
-const fetch = require('node-fetch');
-const chalk = require('chalk');
+import fetch from 'node-fetch';
+import chalk from 'chalk';
 
 const url = 'http://free.ipwhois.io/json/';
 
-const getLocationFromIP = async url => {
+const getLocationFromIP = async (url: string) => {
   const res = await fetch(url);
 
   const data = await res.json();
@@ -11,7 +11,7 @@ const getLocationFromIP = async url => {
   return data;
 };
 
-module.exports = async () => {
+export default async () => {
   try {
     const geoLocation = await getLocationFromIP(url);
 
