@@ -14,9 +14,9 @@ program.version(pkg.version).description(chalk.blue('where is my node'));
 program
   .command('location')
   .alias('lc')
+  .description('checks node location')
   .option('-g --geo', 'output computer geolocation')
   .option('-d --disk', 'output directory on disk')
-  .description('checks node location')
   .action(async cmd => {
     if (cmd.geo || cmd.disk) {
       console.log(`${chalk.magenta('Your node.js is here:')}`);
