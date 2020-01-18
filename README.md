@@ -3,10 +3,17 @@
 ## About
 Simply locate your Node.js location both on disk and map of the world!
 
-## Commands
-##### location|lc [options] - checks node location
+## How to Install
+First, install the CLI by npm:
+```bash
+$ npm install -g where-is-my-node
+```
+## How to Use
+```bash
+$ where-is-my-node [options]
+```
 
-Options:
+## Options
 - `-g --geo` output computer geolocation
 - `-d --disk` output directory on disk
 

@@ -1,5 +1,9 @@
 import npmPath from 'npm-path';
 
-export default async () => {
-  npmPath((err: Error, PATH: string) => console.log(PATH));
+import colorifyHeader from '../helpers/colorifyHeader';
+
+export default () => {
+  npmPath((_: Error, PATH: string) =>
+    console.log(`${colorifyHeader('Directory on disk:')}\n${PATH}`)
+  );
 };

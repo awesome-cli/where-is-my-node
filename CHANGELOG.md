@@ -1,5 +1,12 @@
 # Where is my node Changelog
 
+## 2.0.0 (2020-01-20)
+#### Breaking Changes
+- removed `location` command
+
+#### New Feature
+- added headers & colors to command output
+
 ## 1.2.0 (2019-10-04)
 #### Repository Changes
 - added `TypeScript`
