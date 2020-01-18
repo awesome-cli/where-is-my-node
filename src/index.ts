@@ -14,33 +14,26 @@ program
   .option('-g, --geo', 'output computer geolocation')
   .option('-d, --disk', 'output directory on disk')
   .version(pkg.version)
-  .description(chalk.blue('checks node location'))
   .action(async cmd => {
-    if (cmd.geo) {
-      await geoLocation();
-    }
+    if (cmd.geo) await geoLocation();
 
-    if (cmd.geo && cmd.disk) {
-      console.log('');
-    }
+    if (cmd.geo && cmd.disk) console.log('');
 
-    if (cmd.disk) {
-      diskLocation();
-    }
+    if (cmd.disk) diskLocation();
   });
 
 program.on('command:*', (commands?: string[]) => {
   if (commands) {
     console.error(`error: unknown command: ${commands[0]}`);
 
-    process.exit(1);
+    process.exit();
   }
 });
 
 if (!process.argv.slice(2).length) {
   program.outputHelp();
 
-  process.exit(1);
+  process.exit();
 }
 
 program.parse(process.argv);
