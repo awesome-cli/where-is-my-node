@@ -1,4 +1,7 @@
-# Where is my node
+# [Where is my node](https://github.com/JB1905/where-is-my-node)
+
+[![NPM version](http://img.shields.io/npm/v/where-is-my-node.svg?style=flat-square)](https://www.npmjs.com/package/where-is-my-node)
+[![NPM downloads](http://img.shields.io/npm/dm/where-is-my-node.svg?style=flat-square)](https://www.npmjs.com/package/where-is-my-node)
 
 ## About
 Simply locate your Node.js location both on disk and map of the world!
