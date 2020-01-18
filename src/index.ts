@@ -31,7 +31,7 @@ program
 
 program.on('command:*', (commands?: string[]) => {
   if (commands) {
-    console.error('error: unknown command');
+    console.error(`error: unknown command: ${commands[0]}`);
 
     process.exit(1);
   }
