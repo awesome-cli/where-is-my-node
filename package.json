@@ -1,13 +1,13 @@
 {
   "name": "where-is-my-node",
-  "version": "2.0.0",
+  "version": "2.0.1-beta.1",
   "description": "Get Node.js location (geolocation and directory on your disk)",
   "author": "Jakub Biesiada",
   "license": "MIT",
   "main": "bin/index.js",
   "scripts": {
     "build": "rimraf bin/* && tsc -p .",
-    "prettier": "prettier --write 'src/**/*.ts'"
+    "prettier": "prettier --write 'lib/**/*.ts'"
   },
   "repository": {
     "type": "git",
@@ -28,7 +28,11 @@
     "url": "https://github.com/JB1905/where-is-my-node/issues"
   },
   "homepage": "https://github.com/JB1905/where-is-my-node#readme",
-  "bin": "bin/index.js",
+  "bin": {
+    "where-is-my-node": "bin/index.js",
+    "my-node": "bin/index.js",
+    "wimn": "bin/index.js"
+  },
   "dependencies": {
     "chalk": "^3.0.0",
     "commander": "^4.1.0",
@@ -49,7 +53,7 @@
     }
   },
   "lint-staged": {
-    "src/**/*.ts": [
+    "lib/**/*.ts": [
       "npm run prettier",
       "git add"
     ]
