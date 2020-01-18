@@ -25,14 +25,14 @@ program.on('command:*', (commands?: string[]) => {
   if (commands) {
     console.error(`error: unknown command: ${commands[0]}`);
 
-    process.exit();
+    process.exit(1);
   }
 });
 
 if (!process.argv.slice(2).length) {
   program.outputHelp();
 
-  process.exit();
+  process.exit(1);
 }
 
 program.parse(process.argv);
