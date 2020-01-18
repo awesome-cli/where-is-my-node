@@ -2,7 +2,6 @@
 
 import path from 'path';
 import program from 'commander';
-import chalk from 'chalk';
 
 import geoLocation from './commands/geoLocation';
 import diskLocation from './commands/diskLocation';
