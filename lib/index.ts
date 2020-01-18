@@ -10,7 +10,7 @@ const pkg = require(path.join(__dirname, '../package.json'));
 
 program
   .version(pkg.version)
-  .usage('[options]')
+  .usage('<options>')
   .option('-g, --geo', 'output computer geolocation')
   .option('-d, --disk', 'output directory on disk')
   .action(async cmd => {

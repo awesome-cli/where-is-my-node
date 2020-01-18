@@ -1,5 +1,9 @@
 # Where is my node Changelog
 
+## 2.1.1 (2020-01-18)
+#### Change
+- updated README.md
+
 ## 2.1.0 (2020-01-18)
 #### Breaking Changes
 - removed aliases
