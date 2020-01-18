@@ -1,6 +1,13 @@
 # Where is my node Changelog
 
-## 2.0.0 (2020-01-20)
+## 2.0.1 (2020-01-18)
+#### New Feature
+- added aliases for `where-is-my-node`: `my-node` & `wimn`
+
+#### Repository Changes
+- renamed `src` to `lib`
+
+## 2.0.0 (2020-01-18)
 #### Breaking Changes
 - removed `location` command
 
