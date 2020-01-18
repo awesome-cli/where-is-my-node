@@ -29,10 +29,8 @@ program.on('command:*', (commands?: string[]) => {
   }
 });
 
-if (!process.argv.slice(2).length) {
-  program.outputHelp();
-
-  process.exit(1);
-}
-
 program.parse(process.argv);
+
+if (!process.argv.slice(2).length) {
+  program.help();
+}

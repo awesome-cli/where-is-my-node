@@ -17,6 +17,8 @@ $ npm install -g where-is-my-node
 $ where-is-my-node <options>
 ```
 
+**Instead of `where-is-my-node` you can use aliases: `my-node` & `wimn`**
+
 ## Options
 - `-g, --geo` output computer geolocation
 - `-d, --disk` output directory on disk

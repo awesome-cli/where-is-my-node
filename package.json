@@ -1,6 +1,6 @@
 {
   "name": "where-is-my-node",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "description": "Get Node.js location (geolocation and directory on your disk)",
   "author": "Jakub Biesiada",
   "license": "MIT",
@@ -28,7 +28,11 @@
     "url": "https://github.com/JB1905/where-is-my-node/issues"
   },
   "homepage": "https://github.com/JB1905/where-is-my-node#readme",
-  "bin": "bin/index.js",
+  "bin": {
+    "where-is-my-node": "bin/index.js",
+    "my-node": "bin/index.js",
+    "wimn": "bin/index.js"
+  },
   "dependencies": {
     "chalk": "^3.0.0",
     "commander": "^4.1.0",
