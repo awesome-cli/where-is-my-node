@@ -1,6 +1,6 @@
-# Where is my node Changelog
+# Where is my Node Changelog
 
-## 2.2.1 (2020-01-19)
+## 2.2.1 / 2.2.2 (2020-01-19)
 #### Improvement
 - improved help output
 
