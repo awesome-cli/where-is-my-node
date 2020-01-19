@@ -2,6 +2,8 @@
 
 import path from 'path';
 import program from 'commander';
+import figlet from 'figlet';
+import chalk from 'chalk';
 
 import geoLocation from './commands/geoLocation';
 import diskLocation from './commands/diskLocation';
@@ -27,6 +29,17 @@ program.on('command:*', (commands?: string[]) => {
 
     process.exit(1);
   }
+});
+
+program.on('--help', () => {
+  console.log(
+    chalk.magentaBright(
+      figlet.textSync('Where is\nmy Node', {
+        horizontalLayout: 'full',
+        verticalLayout: 'full',
+      })
+    )
+  );
 });
 
 program.parse(process.argv);

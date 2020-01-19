@@ -1,5 +1,9 @@
 # Where is my node Changelog
 
+## 2.2.1 (2020-01-19)
+#### Improvement
+- improved help output
+
 ## 2.2.0 (2020-01-18)
 #### New Feature
 - readded aliases for `where-is-my-node`: `my-node` & `wimn`

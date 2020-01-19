@@ -1,6 +1,6 @@
 {
   "name": "where-is-my-node",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "Get Node.js location (geolocation and directory on your disk)",
   "author": "Jakub Biesiada",
   "license": "MIT",
@@ -36,10 +36,12 @@
   "dependencies": {
     "chalk": "^3.0.0",
     "commander": "^4.1.0",
+    "figlet": "^1.2.4",
     "node-fetch": "^2.6.0",
     "npm-path": "^2.0.4"
   },
   "devDependencies": {
+    "@types/figlet": "^1.2.0",
     "@types/node": "^13.1.8",
     "@types/node-fetch": "^2.5.4",
     "husky": "^4.0.10",
