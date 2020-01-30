@@ -42,10 +42,10 @@
   },
   "devDependencies": {
     "@types/figlet": "^1.2.0",
-    "@types/node": "^13.5.1",
+    "@types/node": "^13.5.2",
     "@types/node-fetch": "^2.5.4",
     "husky": "^4.2.1",
-    "lint-staged": "^10.0.3",
+    "lint-staged": "^10.0.4",
     "prettier": "^1.19.1",
     "typescript": "^3.7.5"
   },
