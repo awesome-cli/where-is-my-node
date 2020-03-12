@@ -1,6 +1,8 @@
 import fetch from 'node-fetch';
 import chalk from 'chalk';
 
+import { spinner } from '../functions/spinner';
+
 import colorifyHeader from '../helpers/colorifyHeader';
 
 const url = 'http://free.ipwhois.io/json/';
@@ -14,8 +16,13 @@ const getLocationFromIP = async (url: string) => {
 };
 
 export default async () => {
+  spinner.text = 'Checking geolocation';
+  spinner.start();
+
   try {
     const geoLocation = await getLocationFromIP(url);
+
+    spinner.stop();
 
     console.log(
       `${colorifyHeader('Computer geolocation:')}\n` +
@@ -27,6 +34,6 @@ export default async () => {
         `${chalk.cyan('continent')}: ${geoLocation.continent}`
     );
   } catch (err) {
-    console.error(chalk.red(`${err}`));
+    spinner.fail(chalk.red('Unable to get computer geolocation'));
   }
 };
