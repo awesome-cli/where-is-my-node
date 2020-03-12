@@ -1,8 +1,11 @@
 # Where is my Node Changelog
 
-## 2.3.0 (Soon)
+## 2.3.0 (2020-03-12)
 #### New Feature
 - added spinner
+
+#### Improvement
+- updated error messages
 
 ## 2.2.1 / 2.2.2 / 2.2.3 (2020-01-19)
 #### Improvement
