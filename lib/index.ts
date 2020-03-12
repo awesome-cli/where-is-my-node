@@ -15,12 +15,12 @@ program
   .usage('<options>')
   .option('-g, --geo', 'output computer geolocation')
   .option('-d, --disk', 'output directory on disk')
-  .action(async cmd => {
-    if (cmd.geo) await geoLocation();
+  .action(async ({ geo, disk }) => {
+    if (geo) await geoLocation();
 
-    if (cmd.geo && cmd.disk) console.log('');
+    if (geo && disk) console.log('');
 
-    if (cmd.disk) diskLocation();
+    if (disk) diskLocation();
   });
 
 program.on('command:*', (commands?: string[]) => {
