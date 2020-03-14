@@ -15,15 +15,25 @@ program
   .usage('<options>')
   .option('-g, --geo', 'output computer geolocation')
   .option('-d, --disk', 'output directory on disk')
-  .action(async ({ args, geo, disk }) => {
-    if (args.length) program.help();
+  .action(
+    async ({
+      args,
+      geo,
+      disk,
+    }: {
+      args: string[];
+      geo: string;
+      disk: string;
+    }) => {
+      if (args.length) program.help();
 
-    if (geo) await geoLocation();
+      if (geo) await geoLocation();
 
-    if (geo && disk) console.log('');
+      if (geo && disk) console.log('');
 
-    if (disk) diskLocation();
-  });
+      if (disk) diskLocation();
+    }
+  );
 
 program.on('command:*', (commands?: string[]) => {
   if (commands) {
