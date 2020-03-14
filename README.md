@@ -4,7 +4,7 @@
 [![NPM downloads](http://img.shields.io/npm/dm/where-is-my-node.svg?style=flat-square)](https://www.npmjs.com/package/where-is-my-node)
 
 ## About
-Simply locate your Node.js location both on disk and map of the world!
+Simply locate your Node.js both on disk and map of the world!
 
 ## How to Install
 First, install the CLI by npm:
