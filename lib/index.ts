@@ -16,7 +16,7 @@ program
   .option('-g, --geo', 'output computer geolocation')
   .option('-d, --disk', 'output directory on disk')
   .action(async ({ args, geo, disk }) => {
-    if (args) program.help();
+    if (args.length) program.help();
 
     if (geo) await geoLocation();
 
