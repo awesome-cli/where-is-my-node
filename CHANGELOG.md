@@ -1,5 +1,9 @@
 # Where is my Node Changelog
 
+## 2.3.1 (2020-03-14)
+#### Repository Changes
+- updated `commander`
+
 ## 2.3.0 (2020-03-12)
 #### New Feature
 - added spinner
