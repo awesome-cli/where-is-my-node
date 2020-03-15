@@ -33,7 +33,7 @@ export default async () => {
         `${chalk.cyan('country')}: ${geoLocation.country}\n` +
         `${chalk.cyan('continent')}: ${geoLocation.continent}`
     );
-  } catch (err) {
+  } catch {
     spinner.fail(chalk.red('Unable to get computer geolocation'));
   }
 };
