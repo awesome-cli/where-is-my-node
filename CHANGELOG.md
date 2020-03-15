@@ -1,5 +1,9 @@
 # Where is my Node Changelog
 
+## 2.3.2 (2020-03-15)
+#### New Feature
+- added description to help
+
 ## 2.3.1 (2020-03-14)
 #### Repository Changes
 - updated `commander`
