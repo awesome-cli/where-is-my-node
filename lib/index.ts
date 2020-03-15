@@ -12,6 +12,7 @@ const pkg = require(path.join(__dirname, '../package.json'));
 
 program
   .version(pkg.version)
+  .description(pkg.description)
   .usage('<options>')
   .option('-g, --geo', 'output computer geolocation')
   .option('-d, --disk', 'output directory on disk')
