@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/JB1905/where-is-my-node.git"
+    "url": "https://github.com/awesome-cli/where-is-my-node.git"
   },
   "engines": {
     "node": ">=10"
@@ -25,9 +25,9 @@
     "CLI"
   ],
   "bugs": {
-    "url": "https://github.com/JB1905/where-is-my-node/issues"
+    "url": "https://github.com/awesome-cli/where-is-my-node/issues"
   },
-  "homepage": "https://github.com/JB1905/where-is-my-node#readme",
+  "homepage": "https://github.com/awesome-cli/where-is-my-node#readme",
   "bin": {
     "where-is-my-node": "bin/index.js",
     "my-node": "bin/index.js",
@@ -43,10 +43,10 @@
   },
   "devDependencies": {
     "@types/figlet": "^1.2.0",
-    "@types/node": "^13.11.1",
+    "@types/node": "^13.13.0",
     "@types/node-fetch": "^2.5.6",
     "husky": "^4.2.5",
-    "lint-staged": "^10.1.3",
+    "lint-staged": "^10.1.6",
     "prettier": "^2.0.4",
     "typescript": "^3.8.3"
   },

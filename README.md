@@ -1,4 +1,4 @@
-# [Where is my Node](https://github.com/JB1905/where-is-my-node)
+# [Where is my Node](https://github.com/awesome-cli/where-is-my-node)
 
 [![NPM version](http://img.shields.io/npm/v/where-is-my-node.svg?style=flat-square)](https://www.npmjs.com/package/where-is-my-node)
 [![NPM downloads](http://img.shields.io/npm/dm/where-is-my-node.svg?style=flat-square)](https://www.npmjs.com/package/where-is-my-node)
