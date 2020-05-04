@@ -5,12 +5,14 @@ import { spinner } from '../functions/spinner';
 
 import colorifyHeader from '../helpers/colorifyHeader';
 
+import { IpWhoIsResult } from '../interfaces/ipWhoIsResult';
+
 const url = 'http://free.ipwhois.io/json/';
 
 const getLocationFromIP = async (url: string) => {
   const res = await fetch(url);
 
-  const data = await res.json();
+  const data: IpWhoIsResult = await res.json();
 
   return data;
 };
