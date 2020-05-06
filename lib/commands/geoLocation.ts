@@ -29,9 +29,7 @@ const geoLocation = async () => {
         `${chalk.cyan('country')}: ${data.country}\n` +
         `${chalk.cyan('continent')}: ${data.continent}`
     );
-  } catch (err) {
-    console.log(err); // TODO
-
+  } catch {
     spinner.fail(chalk.red('Unable to get computer geolocation'));
   }
 };
