@@ -1,4 +1,4 @@
-export interface IpWhoIsResult {
+export default interface IpWhoIsResult {
   ip: string;
   success: boolean;
   type: string;

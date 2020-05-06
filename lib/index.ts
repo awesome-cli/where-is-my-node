@@ -8,6 +8,8 @@ import chalk from 'chalk';
 import geoLocation from './commands/geoLocation';
 import diskLocation from './commands/diskLocation';
 
+import Params from './interfaces/Params';
+
 const pkg = require(path.join(__dirname, '../package.json'));
 
 program
@@ -16,25 +18,15 @@ program
   .usage('<options>')
   .option('-g, --geo', 'output computer geolocation')
   .option('-d, --disk', 'output directory on disk')
-  .action(
-    async ({
-      args,
-      geo,
-      disk,
-    }: {
-      args: string[];
-      geo: string;
-      disk: string;
-    }) => {
-      if (args.length) program.help();
+  .action(async ({ args, geo, disk }: Params) => {
+    if (args.length) program.help();
 
-      if (geo) await geoLocation();
+    if (geo) await geoLocation();
 
-      if (geo && disk) console.log('');
+    if (geo && disk) console.log('');
 
-      if (disk) diskLocation();
-    }
-  );
+    if (disk) diskLocation();
+  });
 
 program.on('command:*', (commands?: string[]) => {
   if (commands) {

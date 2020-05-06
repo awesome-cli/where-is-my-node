@@ -5,37 +5,35 @@ import { spinner } from '../functions/spinner';
 
 import colorifyHeader from '../helpers/colorifyHeader';
 
-import { IpWhoIsResult } from '../interfaces/ipWhoIsResult';
+import IpWhoIsResult from '../interfaces/ipWhoIsResult';
 
 const url = 'http://free.ipwhois.io/json/';
 
-const getLocationFromIP = async (url: string) => {
-  const res = await fetch(url);
-
-  const data: IpWhoIsResult = await res.json();
-
-  return data;
-};
-
-export default async () => {
+const geoLocation = async () => {
   spinner.text = 'Checking geolocation';
   spinner.start();
 
   try {
-    const geoLocation = await getLocationFromIP(url);
+    const res = await fetch(url);
+
+    const data: IpWhoIsResult = await res.json();
 
     spinner.stop();
 
     console.log(
       `${colorifyHeader('Computer geolocation:')}\n` +
         `${chalk.cyan('coordinates')}: ` +
-        `(${geoLocation.latitude}, ${geoLocation.longitude})\n` +
-        `${chalk.cyan('city')}: ${geoLocation.city}\n` +
-        `${chalk.cyan('region')}: ${geoLocation.region}\n` +
-        `${chalk.cyan('country')}: ${geoLocation.country}\n` +
-        `${chalk.cyan('continent')}: ${geoLocation.continent}`
+        `(${data.latitude}, ${data.longitude})\n` +
+        `${chalk.cyan('city')}: ${data.city}\n` +
+        `${chalk.cyan('region')}: ${data.region}\n` +
+        `${chalk.cyan('country')}: ${data.country}\n` +
+        `${chalk.cyan('continent')}: ${data.continent}`
     );
-  } catch {
+  } catch (err) {
+    console.log(err); // TODO
+
     spinner.fail(chalk.red('Unable to get computer geolocation'));
   }
 };
+
+export default geoLocation;

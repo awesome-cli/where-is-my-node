@@ -3,7 +3,7 @@ import chalk from 'chalk';
 
 import colorifyHeader from '../helpers/colorifyHeader';
 
-export default () => {
+const diskLocation = () => {
   npmPath((err: Error, path: string) => {
     if (err) {
       return console.log(chalk.red('Unable to get directory on disk'));
@@ -12,3 +12,5 @@ export default () => {
     console.log(`${colorifyHeader('Directory on disk:')}\n${path}`);
   });
 };
+
+export default diskLocation;
