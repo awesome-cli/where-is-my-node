@@ -7,14 +7,14 @@ import colorifyHeader from '../helpers/colorifyHeader';
 
 import IpWhoIsResult from '../interfaces/ipWhoIsResult';
 
-const url = 'http://free.ipwhois.io/json/';
+const API_ENDPOINT = 'http://free.ipwhois.io/json/';
 
 const geoLocation = async () => {
   spinner.text = 'Checking geolocation';
   spinner.start();
 
   try {
-    const res = await fetch(url);
+    const res = await fetch(API_ENDPOINT);
 
     const data: IpWhoIsResult = await res.json();
 
