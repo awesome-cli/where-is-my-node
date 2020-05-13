@@ -1,5 +1,10 @@
 # Where is my Node Changelog
 
+## 2.3.3 (2020-05-07)
+#### Internal
+- added missing types
+- cleaned up
+
 ## 2.3.2 (2020-03-15)
 #### New Feature
 - added description to help

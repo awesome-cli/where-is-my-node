@@ -9,7 +9,11 @@ const diskLocation = () => {
       return console.log(chalk.red('Unable to get directory on disk'));
     }
 
-    console.log(`${colorifyHeader('Directory on disk:')}\n${path}`);
+    console.log(
+      `${colorifyHeader('Directory on disk:')}\n${
+        path.split(npmPath.SEPARATOR)[0]
+      }`
+    );
   });
 };
 
