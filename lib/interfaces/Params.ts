@@ -1,5 +1,5 @@
 export default interface Params {
-  args: string[];
-  geo: string;
-  disk: string;
+  readonly args: string[];
+  readonly geo: string;
+  readonly disk: string;
 }
