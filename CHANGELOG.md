@@ -1,5 +1,12 @@
 # Where is my Node Changelog
 
+## 2.3.4 (2020-05-17)
+#### Change
+- `disk` command displays only active Node version directory
+
+#### Internal
+- added readonly to interfaces
+
 ## 2.3.3 (2020-05-07)
 #### Internal
 - added missing types
