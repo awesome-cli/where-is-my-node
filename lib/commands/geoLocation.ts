@@ -1,11 +1,12 @@
 import fetch from 'node-fetch';
 import chalk from 'chalk';
-
-import { spinner } from '../functions/spinner';
+import ora from 'ora';
 
 import colorifyHeader from '../helpers/colorifyHeader';
 
 import IpWhoIsResult from '../interfaces/ipWhoIsResult';
+
+const spinner = ora();
 
 const API_ENDPOINT = 'http://free.ipwhois.io/json/';
 
