@@ -22,7 +22,7 @@
     "disk",
     "check",
     "directory",
-    "CLI"
+    "cli"
   ],
   "bugs": {
     "url": "https://github.com/awesome-cli/where-is-my-node/issues"
