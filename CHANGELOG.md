@@ -4,7 +4,7 @@
 
 #### Change
 
-- `disk` command displays only active Node version directory
+- `disk` command displays only active Node.js version directory
 
 #### Internal
 
