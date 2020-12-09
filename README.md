@@ -22,6 +22,12 @@ First, install the CLI by npm:
 $ npm install -g where-is-my-node
 ```
 
+Or Yarn:
+
+```sh
+$ yarn global add where-is-my-node
+```
+
 ## How to Use
 
 ```sh
