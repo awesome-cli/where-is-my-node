@@ -1,6 +1,6 @@
 {
   "name": "where-is-my-node",
-  "version": "2.3.4",
+  "version": "2.3.6",
   "description": "Get Node.js location (geolocation and directory on your disk)",
   "author": "Jakub Biesiada",
   "license": "MIT",
@@ -35,20 +35,20 @@
   },
   "dependencies": {
     "chalk": "^4.1.0",
-    "commander": "^6.2.0",
+    "commander": "^6.2.1",
     "figlet": "^1.5.0",
     "node-fetch": "^2.6.1",
     "npm-path": "^2.0.4",
-    "ora": "^5.1.0"
+    "ora": "^5.2.0"
   },
   "devDependencies": {
     "@types/figlet": "^1.2.1",
-    "@types/node": "^14.14.7",
-    "@types/node-fetch": "^2.5.7",
-    "husky": "^4.3.0",
-    "lint-staged": "^10.5.1",
-    "prettier": "^2.1.2",
-    "typescript": "^4.0.5"
+    "@types/node": "^14.14.21",
+    "@types/node-fetch": "^2.5.8",
+    "husky": "^4.3.8",
+    "lint-staged": "^10.5.3",
+    "prettier": "^2.2.1",
+    "typescript": "^4.1.3"
   },
   "husky": {
     "hooks": {
