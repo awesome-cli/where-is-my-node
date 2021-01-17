@@ -18,15 +18,17 @@ program
   .usage('<options>')
   .option('-g, --geo', 'output computer geolocation')
   .option('-d, --disk', 'output directory on disk')
-  .action(async ({ args, geo, disk }: Params) => {
-    if (args.length) program.help();
+  .action(
+    async ({ geo, disk }: Params, { args }: { readonly args: string[] }) => {
+      if (args.length) program.help();
 
-    if (geo) await geoLocation();
+      if (geo) await geoLocation();
 
-    if (geo && disk) console.log('');
+      if (geo && disk) console.log('');
 
-    if (disk) diskLocation();
-  });
+      if (disk) diskLocation();
+    }
+  );
 
 program.on('command:*', (commands?: string[]) => {
   if (commands) {
