@@ -8,7 +8,7 @@ import chalk from 'chalk';
 import geoLocation from './commands/geoLocation';
 import diskLocation from './commands/diskLocation';
 
-import Params from './interfaces/Params';
+import Params from './types/Params';
 
 const pkg = require(path.join(__dirname, '../package.json'));
 

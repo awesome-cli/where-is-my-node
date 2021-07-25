@@ -4,7 +4,7 @@ import ora from 'ora';
 
 import colorifyHeader from '../helpers/colorifyHeader';
 
-import IpWhoIsResult from '../interfaces/ipWhoIsResult';
+import IpWhoIsResult from '../types/ipWhoIsResult';
 
 const spinner = ora();
 
